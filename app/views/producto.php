@@ -31,8 +31,8 @@
             <div id="table">
                 <table>
                 <tr>
-                    <th> CATEGORIA Sape</th>
-                    <td><?=$prd["categoria"]?></td>
+                    <th> CATEGORIA </th>
+                    <td><?=$prd["categoria"]?></td> sexx
                 </tr>
                 <tr>
                     <th> CATEGORIA   </th>
