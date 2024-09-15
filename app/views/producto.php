@@ -35,8 +35,8 @@
                     <td><?=$prd["categoria"]?></td>
                 </tr>
                 <tr>
-                    <th> CATEGORIA</th>
-                    <td><?=$prd["subcategoria"]?></td>
+                    <th> CATEGORIA   </th>
+                    <td><?=$prd["subcategoria"]?> </td>
                 </tr>
                 </table> 
             </div>
