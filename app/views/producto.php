@@ -32,7 +32,7 @@
                 <table>
                 <tr>
                     <th> CATEGORIA </th>
-                    <td><?=$prd["categoria"]?></td> sofia
+                    <td><?=$prd["categoria"]?></td> mauri gey
                 </tr>
                 <tr>
                     <th> CATEGORIA   </th>
