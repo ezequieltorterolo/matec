@@ -32,7 +32,11 @@
                 <table>
                 <tr>
                     <th> CATEGORIA </th>
+<<<<<<< HEAD
                     <td><?=$prd["categoria"]?></td> mauri gey
+=======
+                    <td><?=$prd["categoria"]?></td> equisde
+>>>>>>> e832fdd (commit de mauricio)
                 </tr>
                 <tr>
                     <th> CATEGORIA   </th>
