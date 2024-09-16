@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html>
 <head> 
     <link href="styles/style.css" rel="stylesheet" type="text/css">
@@ -11,7 +11,7 @@
 <body>
     <?php include  "segments/header.php" ?>
     <?php include  "segments/nav.php"    ?>
-
+<!-- general commit -->
 
     <div id="back" onclick="history.back()"> 
         <img src="img/angle-left.png"> <p>[Pagina anterior]</p>
@@ -32,7 +32,7 @@
                 <table>
                 <tr>
                     <th> CATEGORIA </th>
-                    <td><?=$prd["categoria"]?></td> mauri gey
+                    <td><?=$prd["categoria"]?></td> 
                 </tr>
                 <tr>
                     <th> CATEGORIA   </th>
