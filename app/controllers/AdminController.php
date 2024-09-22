@@ -21,14 +21,14 @@ class AdminController extends BaseController
 
         //cuando no esta logueado
 
-        if ($_POST["pass"]=="secreto") {
+        if ($_POST["pass"]=="secreto" && $_POST["name"]=="martin") {
             //mostrar pagina de dos opciones
 
             //Guardo en la sesion el nombre del usuario logueado
-            $_SESSION["admin"] = "Martin";
+            $_SESSION["admin"] = $_POST["name"];
 
             //Parametros de la pagina
-            $data["user"] = "Martin";
+            $data["user"] = $_POST["name"];
 
             return $this->view("admin/home", $data);
         }
