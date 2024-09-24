@@ -9,7 +9,7 @@
 </head>
 <body>
     <?php include  "segments/header.php" ?>
-    <?php include  "segments/nav.php" ?>
+    <?php include  "segments/nav.php" ?>  
 
     <div id="contenedor-destacados"></div>
     <div id="slides">
@@ -26,7 +26,7 @@
             </div>
       </div>
     </div>
-    <h1 class="subtitulo">OFERTASS</h1>
+    <h1 class="subtitulo">OFERTASS ana</h1>
     <div id="productos-nuevos">
         <?php foreach($ofertas as $prd):?>
             <div class="producto-posicion">
