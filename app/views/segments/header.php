@@ -7,5 +7,6 @@
         <h3><?=$_SESSION["usuario"]["nombre"]?></h3>
     <?php else: ?>
     <a href="/login">Inicio sesion</a>
+    <a href="/carrito"> Carrito </a>
     <?php endif?>
 </header>
