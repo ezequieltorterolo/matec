@@ -9,7 +9,7 @@
 </head>
 <body>
     <?php include  "segments/header.php" ?>
-    <?php include  "segments/nav.php" ?>  
+    <?php include  "segments/nav.php" ?>
 
     <div id="contenedor-destacados"></div>
     <div id="slides">
