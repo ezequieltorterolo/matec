@@ -10,7 +10,7 @@
 <body>
     <?php include  "segments/header.php" ?>
     <?php include  "segments/nav.php" ?>
-
+    <div><?php $email ?></div>
     <div id="contenedor-destacados"></div>
     <div id="slides">
         <div class="slide showing"></div>
