@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html>
 <head> 
     <link href="styles/style.css" rel="stylesheet" type="text/css">
@@ -11,7 +11,7 @@
 <body>
     <?php include  "segments/header.php" ?>
     <?php include  "segments/nav.php"    ?>
-
+<!-- general commit -->
 
     <div id="back" onclick="history.back()"> 
         <img src="img/angle-left.png"> <p>Volver a la página anterior</p>
@@ -32,7 +32,11 @@
                 <table>
                 <tr>
                     <th> CATEGORIA </th>
+<<<<<<< HEAD
                     <td><?=$prd["categoria"]?></td>
+=======
+                    <td><?=$prd["categoria"]?></td> 
+>>>>>>> f70f81625dcd4781fead158091520963b483260c
                 </tr>
                 <tr>
                     <th> CATEGORIA   </th>

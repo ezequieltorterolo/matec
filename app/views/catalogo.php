@@ -18,15 +18,8 @@
             <hr>
         </div>
         <div id="seccion-filtros">
-            <h3>Categoria:</h3>
-            <select name="catego">
-                <option value="" selected>Mostrar todo</option>
-                <option value="1">Higiene</option>
-                <option value="2">Alimentos</option>
-                <option value="3">Belleza</option>
-            </select>
             <h3>Ordenar por:</h3>
-            <select>
+            <select name="ordenar">
                 <option value="predeterminado" selected>Predeterminado</option>
                 <option value="orden-a-z">Nombre (A-Z)</option>
                 <option value="orden-z-a">Nombre (Z-A)</option>
