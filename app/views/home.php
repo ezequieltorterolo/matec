@@ -2,7 +2,7 @@
 <html>
 <head> 
     <link href="styles/style.css" rel="stylesheet" type="text/css">
-    <script src="scripts/script.js"></script>
+    <script src="scripts/home.js"></script>
     <meta charset="UTF-8" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Eiffel Importaciones</title>
@@ -26,7 +26,7 @@
             </div>
       </div>
     </div>
-    <h1 class="subtitulo">OFERTASS ana</h1>
+    <h1 class="subtitulo">OFERTAS</h1>
     <div id="productos-nuevos">
         <?php foreach($ofertas as $prd):?>
             <div class="producto-posicion">

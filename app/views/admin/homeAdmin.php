@@ -2,6 +2,6 @@
 
 Usuario logueado=<?= $user ?>
 
-<a href="/admin/productos">Gestionar Productos</a>
+<a href="/admin/gestionProductos">Gestionar Productos</a>
 <a href="/admin/reservas">Gestionar Reservas</a>
 

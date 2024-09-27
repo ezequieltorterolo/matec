@@ -3,7 +3,7 @@
 <head> 
     <link href="styles/style.css" rel="stylesheet" type="text/css">
     <link href="styles/style2.css" rel="stylesheet" type="text/css">
-    <script src="scripts/script.js"></script>
+    <script src="scripts/producto.js"></script>
     <meta charset="UTF-8" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Eiffel Importaciones</title>
@@ -54,12 +54,41 @@
 
             <div id="botones">
                 <button> Comprar producto ya</button>
-                <button> Añadir a carrito </button>
+                <button onclick="añadirProducto()"> Añadir a carrito </button>
             </div>
        
         </div>
+  
     </div>
+<script>
 
+    function agregar() {
+
+let cantidad = document.getElementById('cantidad');
+if (cantidad.value < cantidad.max) {
+    cantidad.value = parseInt(cantidad.value) + 1;
+}
+
+
+
+
+}
+
+function quitar() {
+
+let cantidad = document.getElementById('cantidad');
+if (cantidad.value > cantidad.min) {
+    cantidad.value = parseInt(cantidad.value) - 1;
+}
+}
+
+function añadirProducto(){
+let cantidad = document.getElementById("cantidad").value;
+let id = <?=$prd["id"]?>;
+alert(id);
+}
+
+    </script>
     <?php include  "segments/footer.php" ?>
 </body>
 </html>

@@ -7,5 +7,6 @@
         <h3><?=$_SESSION["usuario"]["nombre"]?></h3>
     <?php else: ?>
     <a href="/login">Inicio sesion</a>
+    <a href="carrito"> <img src="img/carrito.svg" style="width:25px; height:25px;"> </a> </img>
     <?php endif?>
 </header>

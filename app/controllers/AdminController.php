@@ -1,7 +1,7 @@
 <?php
 
 namespace app\controllers;
-
+use app\models\Producto;
 use rutex\BaseController;
 
 class AdminController extends BaseController
@@ -10,14 +10,14 @@ class AdminController extends BaseController
     function login($data) {
         if (isset($_SESSION["admin"])) {
             $data["user"] = $_SESSION["admin"];
-            return $this->view("admin/home", $data);
+            return $this->view("admin/homeAdmin", $data);
         }
         else {
             return $this->view("admin/formlogin", $data); 
         }
     }
 
-    function ValidarIngreso($data) {
+    function ValidarIngresoAdmin($data) {
 
         //cuando no esta logueado
 
@@ -30,7 +30,7 @@ class AdminController extends BaseController
             //Parametros de la pagina
             $data["user"] = $_POST["name"];
 
-            return $this->view("admin/home", $data);
+            return $this->view("admin/homeAdmin", $data);
         }
 
         else 
@@ -38,11 +38,26 @@ class AdminController extends BaseController
 
         }
 
-    function productos($data) {
-        return $this->view("admin/productos", $data);}
+    function gestionProductos($data) {
+
+
+        return $this->view("admin/gestionProductos", $data);}
+
+        function productoAdmin($data){
+            $producto    = new Producto;
+            $data["prd"] = $producto->getById($_GET["id"]);
+
+
+            return $this->view("admin/productoAdmin", $data);}
+
+        
 
         
     function reservas($data) {
         return $this->view("admin/reservas", $data);}
 
-}
+    function delete($data){
+        return "queremos borrar el producto".$_GET["prdid"];
+        }
+    
+    }

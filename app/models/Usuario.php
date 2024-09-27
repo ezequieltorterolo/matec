@@ -15,7 +15,7 @@ class Usuario extends Model {
    ];
    function usuarioLoggeado() {
     return [
-        "id"     => $this->current["id"],
+        "idUsuarios"     => $this->current["idUsuarios"],
         "nombre" => $this->current["nombre"],
     ];
 }
