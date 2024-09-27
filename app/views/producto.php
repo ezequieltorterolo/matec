@@ -14,7 +14,7 @@
 
 
     <div id="back" onclick="history.back()"> 
-        <img src="img/angle-left.png"> <p>[Pagina anterior]</p>
+        <img src="img/angle-left.png"> <p>Volver a la página anterior</p>
     </div>
 
     <div id=container>    
@@ -32,7 +32,7 @@
                 <table>
                 <tr>
                     <th> CATEGORIA </th>
-                    <td><?=$prd["categoria"]?></td> mauri gey
+                    <td><?=$prd["categoria"]?></td>
                 </tr>
                 <tr>
                     <th> CATEGORIA   </th>
