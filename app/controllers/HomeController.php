@@ -146,4 +146,12 @@ class HomeController extends BaseController
         return $categoria;
     }
 
+
+
+    function carrito()
+    {
+      
+
+        return $this->view("carrito");
+    }
 }
