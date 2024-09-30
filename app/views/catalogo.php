@@ -29,20 +29,18 @@
 
 
         <hr id="hr-catalogo">
-        <div id="productos">
-            <div class="productos-nuevos">
-                <?php foreach ($data as $prd): ?>
-                    <div class="producto-posicion">
-                        <a href =/producto?id=<?=$prd["id"]?>><img class="img-prod" src=img/<?=$prd["imagen"]?>></a>
-                        <p class="nombre-prod"><?= $prd["nombre"] ?></p>
-                        <p class="precio-prod">$<?= $prd["precio"] ?></p>
-                        <span class="carrito-hover">AGREGAR AL CARRITO</span>
-                    </div>
-                <?php endforeach ?>
+        <div id="productos-nuevos">
+        <?php foreach($data as $prd):?>
+            <div class="producto-posicion">
+                <a href =/producto?id=<?=$prd["id"]?>><img class="img-prod" src=img/<?=$prd["imagen"]?>></a>
+                <p class="nombre-prod"><?=$prd["nombre"]?></p>
+                <p class="precio-prod"><?php if(isset($prd["precioMayor"])): ?>
+                    $<?=$prd["precioMayor"]?> Al por mayor -
+            <?php else: ?>
+                &nbsp
+            <?php endif; ?>$<?=$prd["precio"]?> c/u </p>
             </div>
-
-        </div>
-
+        <?php endforeach?>
     </div>
     <?php include  "segments/footer.php" ?>
 </body>

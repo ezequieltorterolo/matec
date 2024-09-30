@@ -28,14 +28,18 @@
     </div>
     <h1 class="subtitulo">OFERTAS</h1>
     <div id="productos-nuevos">
-        <?php foreach($ofertas as $prd):?>
+       <?php foreach($ofertas as $prd):?>
             <div class="producto-posicion">
-            <a href =/producto?id=<?=$prd["id"]?>><img class="img-prod" src=img/<?=$prd["imagen"]?>></a>
-            <p class="nombre-prod"><?=$prd["nombre"]?></p>
-            <p class="precio-prod">$<?=$prd["precioMayor"]?> Al por mayor - $<?=$prd["precio"]?> c/u</p>
-            </div> 
+                <a href =/producto?id=<?=$prd["id"]?>><img class="img-prod" src=img/<?=$prd["imagen"]?>></a>
+                <p class="nombre-prod"><?=$prd["nombre"]?></p>
+                <p class="precio-prod"><?php if(isset($prd["precioMayor"])): ?>
+                    $<?=$prd["precioMayor"]?> Al por mayor -
+            <?php else: ?>
+                &nbsp
+            <?php endif; ?>$<?=$prd["precio"]?> c/u </p>
+            </div>
         <?php endforeach?>
-        </div>
+    </div>
        
     
     <div id="productos" onclick="redirigir()">
