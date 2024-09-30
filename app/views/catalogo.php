@@ -27,7 +27,6 @@
             <p><?=$totrec?> productos encontrados.</p>
         </div>
 
-
         <hr id="hr-catalogo">
         <div id="productos-nuevos">
         <?php foreach($data as $prd):?>

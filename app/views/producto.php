@@ -14,7 +14,7 @@
 <!-- general commit -->
 
     <div id="back" onclick="history.back()"> 
-        <img src="img/angle-left.png"> <p>[Pagina anterior]</p>
+        <img src="img/angle-left.png"> <p>Volver a la página anterior</p>
     </div>
 
     <div id=container>    
@@ -32,7 +32,11 @@
                 <table>
                 <tr>
                     <th> CATEGORIA </th>
+<<<<<<< HEAD
+                    <td><?=$prd["categoria"]?></td>
+=======
                     <td><?=$prd["categoria"]?></td> 
+>>>>>>> f70f81625dcd4781fead158091520963b483260c
                 </tr>
                 <tr>
                     <th> CATEGORIA   </th>
